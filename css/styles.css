@@ -1,0 +1,174 @@
+﻿
+/*Table of Contents*/
+
+*{
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+/*FONTS*/
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    padding: 40px 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+p {
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 1.4px;
+    font-weight: 300;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/*--Wrapper--*/
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    padding: 90px 0;
+   
+}
+
+/*CARDS*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    background-color: hsl(0, 0%, 95%);
+}
+.carda, .cardb, .cardc {
+    
+    text-align: left;
+    flex-basis: 15.6rem;
+    height: auto;
+    padding: 2.8rem;
+}
+
+.carda{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;              /*Radius for end of cards only*/
+
+}
+.cardb {
+   
+    background-color: hsl(184, 100%, 22%);
+}
+.cardc {
+    background-color: hsl(179, 100%, 13%);
+    border-radius:  0 8px 8px 0;            /*Radius for end of cards only*/
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media screen and (max-width: 1108px) {
+    .flex-container {
+        flex-direction: column;
+        max-width: 376px;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        padding: 10px 1.2rem;
+    }
+    .btn {
+        font-family: 'Lexend Deca', sans-serif;
+        border: solid 2px #fff;
+        border-radius: 25px;
+        padding: 12px 32px;
+        margin-top: 35px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    .carda, .cardb, .cardc {
+    
+        text-align: left;
+        flex-basis: 15.65rem;
+        height: auto;
+        padding: 2.75rem;
+    }
+    .carda{
+        
+        border-radius: 8px 8px 0 0; /*change border radius for mobile*/
+    
+    }
+   
+    .cardc {
+        
+        border-radius:  0 0 8px 8px;    /*change border radius for mobile*/        
+    }
+   
+    
+}
+
+/*COMPONENTS*/
+
+/*Button*/
+.btn {
+    font-family: 'Lexend Deca', sans-serif;
+    border: solid 2px hsl(0, 0%, 95%);
+    border-radius: 25px;
+    padding: 12px 32px;
+    margin-top: 75px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+}
+/*--Button height changed for mobile--*/
+@media screen and (max-width: 1108px){
+    .btn {
+        margin-top: 37px;
+    }
+}
+.a {
+    color: hsl(31, 77%, 52%);
+}
+.a:hover {
+        color: hsl(0, 0%, 95%);
+        transition: 0.4s;
+        border: solid 2px #fff;
+        background-color: hsl(31, 77%, 52%);
+}
+
+.b {
+    color:  hsl(184, 100%, 22%);
+}
+
+    .b:hover {
+        color: #fff;
+        transition: 0.4s;
+        border: solid 2px #fff;
+        background-color: transparent;
+    }
+.c {
+    color: hsl(179, 100%, 13%);
+}
+
+    .c:hover {
+        color: #fff;
+        transition: 0.4s;
+        border: solid 2px #fff;
+        background-color: transparent;
+    }
+
+    /*MEDIA QUERIES*/
+
+
+
+
+
+
